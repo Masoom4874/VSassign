@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* colors for setting up layput */
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.yellow {
+  color: yellow;
+}
+.black {
+  color: black;
+}
+/* @font-face {
+  font-family: "YourFontName";
+  src: url("path/to/your/font.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}  */
+
+text {
+  font-family: "nothingyoucando", sans-serif; /* Use 'sans-serif' as a fallback */
+}
+
+/* template classes */
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-center {
+  display: flex;
+  justify-content: center;
+}
+.mx-1 {
+  margin: 0rem 1rem;
+}
+.ms-1 {
+  margin-left: 1rem;
+}
+
+.vertical-line {
+  border-left: 2px solid #ff007f; /* Adjust the color and thickness as needed */
+  height: 100%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+/* Home page Styles 
+----------------------
+----------------------*/
+
+#homepage {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5bd7e8;
+}
+
+#home-main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+
+#home-footer {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#home-main-1 {
+  width: 95%;
+}
+#home-main-2 {
+  width: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#h-p-main-1 {
+  height: 20%;
+}
+
+#h-p-main-1-img {
+  display: flex;
+  max-width: max-content;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 12%;
+}
+
+#h-p-main-1-img span {
+  font-family: "Nothing You Could Do", sans-serif;
+}
+
+#h-p-main-2 {
+  display: flex;
+  justify-content: end;
+  height: 55%;
+}
+#h-p-main-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+  height: 25%;
+  font-family: "Kanit", sans-serif;
+  color: #4a0292;
+}
+
+#make-your {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: self-start;
+  text-align: end !important;
+  align-self: center;
+}
+
+#side-make-img {
+  width: 47%;
+}
+
+#h-p-main-1-img {
+  position: relative;
+}
+
+#brand-gif {
+  position: absolute;
+  top: 38%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 15rem; /* Adjust the width as needed */
+  height: 15rem; /* Adjust the height as needed */
+}
+#h-p-main-3 {
+  position: relative;
+  text-align: center; /* Center the content horizontally */
+}
+
+#paste {
+  position: absolute;
+  top: 55%; /* Adjust the top position as needed */
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 25rem; /* Adjust the width as needed */
+  height: 15rem;
+}
+
+#round-line {
+  position: absolute;
+  top: 19%; /* Adjust the top position as needed */
+  left: 48.5%;
+  width: 15rem; /* Adjust the width as needed */
+  height: 12rem;
+  transform: translateX(-50%) rotate(-30deg);
+}
+
+#Brand-power-h6 {
+  position: relative;
+  z-index: 1; /* Ensure the text appears above the images */
+}
+
+#text-h-1 {
+  font-size: 5rem;
+  font-weight: 1200;
+  font-family: "RUBIK MONO ONE", sans-serif;
+  color: #4700ff;
+  transform: rotate(-2deg);
+}
+
+#text-h-2 {
+  font-size: 9rem;
+  font-weight: 1200;
+  font-family: "RUBIK MONO ONE", sans-serif;
+  color: white;
+  transform: rotate(-2deg);
+  text-shadow: -4px -4px 0px red,
+    /* First layer with color #009688 */ -8px -8px 0px blue;
+}
+
+#text-h-3 {
+  font-size: 5rem;
+  font-weight: 1200;
+  font-family: "RUBIK MONO ONE", sans-serif;
+  color: #ff007f;
+  transform: rotate(-2deg);
+}
+
+.text-carousel {
+  display: flex;
+  animation: marquee 10s linear infinite; /* Adjust duration as needed */
+}
+
+.carousel-item {
+  min-width: 100%;
+  white-space: nowrap;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Campaign page Styles 
+----------------------
+----------------------*/
+
+#campaign-idea {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ff007f;
+}
+
+#campaign-idea h6 {
+  font-size: 4rem;
+  font-weight: 1200;
+  font-family: "RUBIK MONO ONE", sans-serif;
+  color: white;
+  text-shadow: -8px -8px 0px blue;
+  text-align: end;
+}
+
+#campaign-1 {
+  height: 15%;
+  display: flex;
+  align-items: end;
+}
+#campaign-2 {
+  height: 60%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background-color: white;
+  margin-bottom: 6rem;
+  margin-top: 4rem;
+}
+
+#campaign-3 {
+  height: 15%;
+}
+
+#campaign-3 button {
+  padding: 10px 20px;
+  background-color: #f3cb3b;
+  color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: xx-large;
+  font-family: "Kanit", sans-serif;
+}
+
+/* Metric page Styles 
+----------------------
+----------------------*/
+
+#matric-page {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #5bd7e8;
+}
+
+#matric-main {
+  height: 70%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3%;
+  text-align: center;
+}
+#matric-main-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9e04c5;
+  height: 50%;
+  width: 15%;
+  transform: rotate(-90deg);
+  font-size: 5rem;
+  font-family: "RUBIK MONO ONE", sans-serif;
+  text-shadow: 5px 0px 0px black;
+}
+#matric-main-2 {
+  background-color: #9e04c5;
+  height: 100%;
+  width: 30%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#matric-main-2 img {
+  background-color: #9e04c5;
+  align-items: center;
+  height: 60%;
+  width: 80%;
+}
+
+#matric-main-2 h6 {
+  font-size: 4rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+#matric-main-2 span {
+  margin: 1.3rem;
+  text-align: center;
+  width: 70%;
+  font-size: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  color: white;
+}
+
+#matric-main-3 {
+  background-color: #9e04c5;
+  height: 100%;
+  width: 15%;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+#matric-main-3-img {
+  height: 30%;
+  background-color: #9e04c5;
+  width: 100%;
+  border-radius: 2rem;
+  margin-bottom: 8rem;
+  padding: 0 5%;
+}
+
+#matric-main-3-img img {
+  background-color: #d9daff;
+  border-radius: 120% 80% 90% 90% / 100% 100% 100% 120%;
+
+  height: 100%;
+  width: 100%;
+}
+
+#matric-main-3 h6 {
+  font-size: 2.2rem;
+  transform: rotate(-90deg);
+  color: white;
+  margin-bottom: 3rem;
+  font-family: "Kanit", sans-serif;
+}
+#matric-main-4 {
+  background-color: #9e04c5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 15%;
+  border-radius: 2rem;
+  padding: 2% 0%;
+}
+
+#matric-main-4-img {
+  height: 40%;
+}
+
+#matric-main-4-img img {
+  height: 90%;
+}
+
+#matric-main-4-text {
+  font-size: 2.2rem;
+  transform: rotate(-90deg);
+  color: white;
+  margin-bottom: 3rem;
+  font-family: "Kanit", sans-serif;
+}
+
+/* CReate campaign page Styles 
+----------------------
+----------------------*/
+#create-campaign {
+  height: 100vh;
+  background-color: #f3cb3b;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #2f42dc;
+  position: relative;
+}
+#create-campaign h6 {
+  margin-top: 3%;
+  font-size: 5rem;
+  font-family: "Kanit", sans-serif;
+  text-shadow: -5px 0px 0px white;
+}
+
+#create-img-1,
+#create-img-2,
+#create-img-3 {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  /* Add additional styles as needed */
+}
+
+#create-img-1 {
+  height: 30%;
+}
+
+#create-img-3 {
+  top: 20%;
+  left: 20%;
+}
+
+#create-img-2 {
+  height: 30%;
+  top: 18%;
+  left: 42%;
+}
+
+#create-img-3 {
+  top: 40%;
+  left: 45%;
+}
+
+/* page-footer page Styles 
+----------------------
+----------------------*/
+#page-footer {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: #0e0e0e;
+}
+#page-footer h6 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+#page-footer-1 {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+}
+#page-footer-1 > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#page-footer-1 > :nth-child(3) {
+  display: flex;
+  width: 30%;
+}
+#page-footer-1 > :nth-child(3) img {
+  height: 30px;
+}
+
+#page-footer-2 {
+  border-bottom: 2px solid white;
+  text-align: center;
+  width: 90%;
+  padding: 10px;
+}
+#page-footer-3 {
+  font-size: 2.5rem;
+  font-family: "Kanit", sans-serif;
+}
