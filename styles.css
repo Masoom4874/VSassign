@@ -3,20 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-/* colors for setting up layput */
-.red {
-  color: red;
-}
-.blue {
-  color: blue;
-}
-.yellow {
-  color: yellow;
-}
-.black {
-  color: black;
-}
 /* @font-face {
   font-family: "YourFontName";
   src: url("path/to/your/font.woff2") format("woff2");
@@ -45,6 +31,9 @@ text {
   margin-left: 1rem;
 }
 
+.cursor-pointer:hover {
+  cursor: pointer;
+}
 .vertical-line {
   border-left: 2px solid #ff007f; /* Adjust the color and thickness as needed */
   height: 100%;
@@ -171,16 +160,16 @@ text {
 
 #round-line {
   position: absolute;
-  top: 19%; /* Adjust the top position as needed */
+  top: 19%;
   left: 48.5%;
-  width: 15rem; /* Adjust the width as needed */
+  width: 15rem;
   height: 12rem;
   transform: translateX(-50%) rotate(-30deg);
 }
 
 #Brand-power-h6 {
   position: relative;
-  z-index: 1; /* Ensure the text appears above the images */
+  z-index: 1;
 }
 
 #text-h-1 {
@@ -197,8 +186,7 @@ text {
   font-family: "RUBIK MONO ONE", sans-serif;
   color: white;
   transform: rotate(-2deg);
-  text-shadow: -4px -4px 0px red,
-    /* First layer with color #009688 */ -8px -8px 0px blue;
+  text-shadow: -4px -4px 0px red, -8px -8px 0px blue;
 }
 
 #text-h-3 {
@@ -208,26 +196,172 @@ text {
   color: #ff007f;
   transform: rotate(-2deg);
 }
-
-.text-carousel {
+#footer-container {
   display: flex;
-  animation: marquee 10s linear infinite; /* Adjust duration as needed */
-}
-
-.carousel-item {
-  min-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  overflow: hidden;
+  font-size: 2.8rem;
+  font-family: "Kanit", sans-serif;
   white-space: nowrap;
+  position: relative;
 }
 
-@keyframes marquee {
+#footer-container {
+  display: flex;
+  animation: slideRightToLeft 5s linear infinite;
+}
+#footer-container h6 {
+  margin: 0;
+  padding: 10px;
+  transition: opacity 1s ease-out; /* Smooth transition for opacity */
+  animation: slideRightToLeft 5s ease infinite; /* Apply the animation to the element */
+}
+
+@keyframes slideRightToLeft {
   0% {
-    transform: translateX(0);
+    transform: translateX(100%);
+    opacity: 0;
   }
+  20%,
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
+    opacity: 1;
   }
 }
 
+#footer-container h6:nth-child(1) {
+  color: #9e04c5;
+}
+#footer-container h6:nth-child(2) {
+  color: #4700ff;
+}
+#footer-container h6:nth-child(3) {
+  color: #ff018f;
+}
+#footer-container h6:last-child {
+  color: #9e04c5;
+}
+
+/* Navbar page Styles 
+----------------------
+----------------------*/
+/* #Navbar {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-color: #ff007f;
+}
+#nav-links {
+  width: 90%;
+  margin-left: 10%;
+}
+
+#nav-links li {
+  font-size: 4rem;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  list-style: none;
+  margin-bottom: 2%;
+}
+
+#close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 5%;
+  border-left: 2px solid white;
+} */
+
+#Navbar {
+  display: none; /* Initially hide the navbar */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%; /* Set a fixed height, adjust as needed */
+  background-color: #ff007f; /* Semi-transparent black overlay */
+  color: #fff;
+  box-sizing: border-box;
+  z-index: 1000;
+  transition: opacity 0.3s ease-in-out;
+}
+#Navbar.show {
+  display: block;
+  opacity: 1; /* Show the navbar with a smooth transition */
+}
+
+#Navbar-body {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  background-color: #ff007f;
+}
+
+#nav-links {
+  flex: 1; /* Take remaining space */
+  margin-left: 10%;
+}
+#nav-links li {
+  font-size: 5rem;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  list-style: none;
+}
+
+#home-underline {
+  height: 4px;
+  width: 15%;
+  border: 0;
+  background-color: #fff; /* Adjust the color as needed */
+  margin: 0;
+}
+#nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 4rem;
+  transition: border-bottom-width 0.3s ease-in-out;
+}
+
+#nav-links a:hover::after,
+#nav-links a:focus::after,
+#nav-links a:active::after {
+  width: 100%;
+}
+#nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  bottom: -5px;
+  transition: width 2s ease-in-out;
+}
+
+#close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 5%;
+  margin-right: 1rem;
+  border-left: 2px solid white;
+  transition: opacity 0.3s ease-in-out;
+}
+#close-btn img {
+  cursor: pointer;
+  width: 100%; /* Make the image fill the container */
+}
+
+#navbtn {
+  cursor: pointer;
+}
 /* Campaign page Styles 
 ----------------------
 ----------------------*/
@@ -256,17 +390,46 @@ text {
   display: flex;
   align-items: end;
 }
+
+/* border-radius: 120% 80% 90% 90% / 100% 100% 100% 120%; */
 #campaign-2 {
-  height: 60%;
   width: 30%;
+  height: 70%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-color: white;
   margin-bottom: 6rem;
   margin-top: 4rem;
+  text-align: center;
+}
+#campaign-image {
+  width: 60%;
+  height: 80%;
+  object-fit: cover;
+}
+
+#image-title {
+  position: absolute;
+  font-size: 4rem;
+  font-family: "Kanit", sans-serif;
+  z-index: 3;
+  top: 85%;
+}
+
+#campaign-img-svg {
+  position: absolute;
+  z-index: 1;
+}
+
+#campaign-image {
+  position: absolute;
+  width: 50%;
+  height: 60%;
+  object-fit: cover;
+  z-index: 2;
 }
 
 #campaign-3 {
@@ -509,4 +672,8 @@ text {
 #page-footer-3 {
   font-size: 2.5rem;
   font-family: "Kanit", sans-serif;
+}
+
+#page-footer-3 h6 {
+  margin-top: 1rem;
 }

@@ -64,11 +64,14 @@
           <div class="vertical-line"></div>
           <div class="mx-1">
             <svg
+              id="navbtn"
+              class="cursor-pointer"
               xmlns="http://www.w3.org/2000/svg"
               width="47"
               height="30"
               viewBox="0 0 47 30"
               fill="none"
+              onclick="toggleNavbar()"
             >
               <path
                 d="M0 0H46.9889V3.64161H0V0ZM0 12.7456H31.326V16.3872H0V12.7456ZM0 25.4913H46.9889V29.1329H0V25.4913Z"
@@ -79,9 +82,49 @@
         </div>
       </div>
       <div id="home-footer">
-        <div class="text-carousel" id="textCarousel">
-          <div class="carousel-item">Text 1</div>
-          <div class="carousel-item">Text 2</div>
+        <div id="footer-container">
+          <h6><i>DRIVE SALES</i></h6>
+          <h6><i>GRAB ATTENTION</i></h6>
+          <h6><i>IGNITE</i></h6>
+          <h6><i>DRIVE SALES</i></h6>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Html-------------------------
+          -----------------------------------
+          ------------------------------------- -->
+    <div id="Navbar">
+      <div id="Navbar-body">
+        <div id="nav-links">
+          <ul>
+            <li>
+              <a href="#home" onclick="scrollToSection('homepage')">Home</a>
+            </li>
+            <hr id="home-underline" />
+            <li>
+              <a
+                href="#campaign-idea"
+                onclick="scrollToSection('campaign-idea')"
+                >Campaign Ideas</a
+              >
+            </li>
+            <li>
+              <a href="#matric-page" onclick="scrollToSection('matric-page')"
+                >Metric Measures</a
+              >
+            </li>
+            <li>
+              <a
+                href="#create-campaign"
+                onclick="scrollToSection('create-campaign')"
+                >Create Campaign</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="close-btn" onclick="toggleNavbar()">
+          <img src="assets/close_button.png" alt="Close Button" />
         </div>
       </div>
     </div>
@@ -94,7 +137,31 @@
       <div id="campaign-1">
         <h6>CAMPAIGN IDEAS</h6>
       </div>
-      <div id="campaign-2" class="image-carousel">a</div>
+      <div id="campaign-2">
+        <img
+          height="5vh"
+          id="campaign-image"
+          src="assets/Ideas/IdeasImg1.png"
+          alt=""
+          srcset=""
+        />
+        <div id="campaign-img-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="480"
+            height="408"
+            viewBox="0 0 480 408"
+            fill="none"
+          >
+            <path
+              d="M478.056 214.671C462.091 287.774 369.916 382.188 288.918 404.073C191.355 430.433 0 319.275 0 214.671C0 110.068 166.965 -20.3646 308.208 2.67549C441.913 55.3961 490.771 156.45 478.056 214.671Z"
+              fill="#2A9BCB"
+            />
+          </svg>
+        </div>
+        <div id="image-title"></div>
+      </div>
+
       <div id="campaign-3">
         <button type="button"><b>KNOW MORE</b></button>
       </div>
@@ -157,6 +224,12 @@
         srcset=""
       />
     </div>
+
+    <!-- 
+    footer ---------------------------------------------------------------------
+    ------------------------------------------------------------------------------
+    ------------------------------------------------------------------------------ -->
+
     <div id="page-footer">
       <div id="page-footer-1">
         <div>
