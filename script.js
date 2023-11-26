@@ -56,7 +56,7 @@ function redirectToCampaignIdea() {
   window.open("campaignIdeas.html", "_self");
 }
 
-const capaginOptions = document.getElementById("capaginOptions");
+const capaginOptions = document.getElementById("leftContent");
 const rightContainer = document.getElementById("rightContainer");
 
 const campaignRegistrationList = [
@@ -157,13 +157,29 @@ function updateContent(title) {
 }
 
 function getOptionTitles(selectedTitle) {
-  let leftContent = ``;
+  let leftContent = `
+  <img
+  src="./assets/capagin.svg"
+  height="180px"
+  style="object-fit: fill"
+  alt=""
+  srcset=""
+/>
+  `;
+
   for (i = 0; i < 5; i++) {
     leftContent += `
+
+
+   
+
+
+
+
         <div class="row-align-center">
                 <img src="${
                   campaignRegistrationList[i].icon
-                }" height="30px" width="30px" alt="" srcset="" />
+                }" height="50px" width="50px" alt="" srcset="" />
                 <h3 class="${
                   selectedTitle == campaignRegistrationList[i].title ||
                   campaignRegistrationList.findIndex(
@@ -178,6 +194,8 @@ function getOptionTitles(selectedTitle) {
     }</h3>
             </div>`;
   }
+
+  leftContent += "</div>";
 
   capaginOptions.innerHTML = leftContent;
 }
@@ -211,6 +229,7 @@ function getOptionContent(selectedTitle) {
         </div>`;
 
         rightContainer.innerHTML = content;
+        console.log(rightContainer.innerHTML);
       }
 
       break;
@@ -234,6 +253,7 @@ function getOptionContent(selectedTitle) {
         });
 
         content += `</div></div>
+        <div style="margin-bottom:5rem"></div>
           <div class="next-btn-div">
           <div class="go-back-btn" onclick="updateContent('Select campaign types')">GO BACK</div>
           <div onclick="updateContent('Select Duration of campaign')" class="next-btn">NEXT</div>
@@ -248,6 +268,15 @@ function getOptionContent(selectedTitle) {
 
     case "Select Duration of campaign":
       content += `</div>
+
+      <div style="display:flex;flex-direction:column">
+
+     
+
+
+      <img height=250rem src="./assets/calender/calender.svg">
+      <div style="margin-bottom:5rem"></div>
+      </div>
           <div class="next-btn-div">
           <div class="go-back-btn" onclick="updateContent('Select data fields to be collected')">GO BACK</div>
           <div onclick="updateContent('Contact Details')" class="next-btn">NEXT</div>
@@ -302,3 +331,5 @@ function getOptionContent(selectedTitle) {
 function contactUs() {
   window.open("reachout.html", "_self");
 }
+
+// Metrics

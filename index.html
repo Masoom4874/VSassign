@@ -15,7 +15,7 @@
       rel="stylesheet"
     />
 
-    <script src="script.js"></script>
+    <script async src="script.js"></script>
   </head>
   <body>
     <!-- 
@@ -232,18 +232,78 @@
     <!-- Capaign Type -->
 
     <section id="campaigns" class="bg-color">
-      <div class="left horizontal-space-around">
-        <img
-          src="./assets/capagin.svg"
-          height="180px"
-          style="object-fit: fill"
-          alt=""
-          srcset=""
-        />
-        <div id="capaginOptions"></div>
-      </div>
+      <div class="left horizontal-space-around left" id="leftContent"></div>
 
-      <div class="right" id="rightContainer"></div>
+      <div class="right" id="rightContainer">
+        <div>
+          <h3 class="campaign-header">SELECT CAMPAIGN TYPES</h3>
+          <div class="content">
+            <div class="box">
+              <div>
+                <img
+                  src="./assets/campainType/flat-woman.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <span>Pictivatr</span>
+            </div>
+            <div class="box">
+              <div>
+                <img src="./assets/campainType/pledge.png" alt="" srcset="" />
+              </div>
+              <span>Pledge</span>
+            </div>
+            <div class="box">
+              <div>
+                <img src="./assets/campainType/survey.png" alt="" srcset="" />
+              </div>
+              <span>Survey</span>
+            </div>
+            <div class="box">
+              <div>
+                <img src="./assets/campainType/quiz.png" alt="" srcset="" />
+              </div>
+              <span>Quiz</span>
+            </div>
+            <div class="box">
+              <div>
+                <img src="./assets/campainType/quiz2.svg" alt="" srcset="" />
+              </div>
+              <span>Video based Quiz</span>
+            </div>
+            <div class="box">
+              <div>
+                <img
+                  src="./assets/campainType/gamification.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <span>Gamification</span>
+            </div>
+            <div class="box">
+              <div>
+                <img
+                  src="./assets/campainType/educational.svg"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+              <span>Educational Idea</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="next-btn-div">
+          <div
+            onclick="updateContent('Select data fields to be collected')"
+            class="next-btn"
+          >
+            NEXT
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- 

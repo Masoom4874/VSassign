@@ -699,11 +699,21 @@ text {
 }
 
 .white-text {
-  color: var(--text-color-inactive);
+  /* color: var(--text-color-inactive); */
+  color: white;
+  font-size: x-large;
+  font-weight: 700;
+  opacity: 0.8;
+  font-family: "Kanit";
 }
 
 .white-text-active {
-  color: var(--text-color-active);
+  /* color: var(--text-color-active); */
+  color: white;
+  font-size: xx-large;
+  font-weight: 800;
+  margin-left: 1rem;
+  font-family: "Kanit";
 }
 
 .left {
@@ -730,6 +740,16 @@ text {
   height: 80%;
   background-color: white;
   border-radius: 30px;
+  padding: 1rem 1rem;
+
+  & h3 {
+    margin: 2rem 0rem;
+    color: var(--background-color);
+    font-size: x-large;
+    font-weight: 800;
+    margin-left: 1rem;
+    font-family: "Kanit";
+  }
 
   & .content {
     display: grid;
@@ -748,10 +768,8 @@ text {
       & img {
         object-fit: contain;
         object-position: center;
-        height: 60px;
-        width: 60px;
-        height: 100px;
-        width: 100px;
+        height: 8.5rem;
+        width: 8.5rem;
         padding: 0.2rem;
         background-color: rgba(61, 21, 159, 0.44);
         border-radius: 20px;
@@ -763,9 +781,10 @@ text {
     display: block;
     color: black;
     font-weight: 700;
-    font-size: 16;
+    font-size: 18px;
     text-align: center;
     word-wrap: break-word;
+    font-family: "Kanit";
   }
 }
 
@@ -782,18 +801,24 @@ text {
   font-size: 1vw;
   font-weight: 700;
   padding: 0.5rem 1rem;
-  width: 4rem;
+  /* width: 4rem; */
   text-align: center;
   margin: 0rem 0.4rem;
   cursor: pointer;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+  font-family: "Kanit";
 }
 
 .go-back-btn {
+  /* position: relative; */
+  /* bottom: 1rem; */
   text-decoration: underline;
   color: var(--background-color);
-  font-size: 1vw;
+  font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
+  font-family: "Kanit";
 }
 
 .next-btn-div {
@@ -811,18 +836,19 @@ text {
       color: var(--background-color);
       font-weight: 700;
       margin: 0rem 1rem;
-      font-size: medium;
+      font-size: x-large;
       letter-spacing: 0.8px;
       display: block;
       margin: 0.5rem 0rem;
+      font-family: "Kanit";
     }
 
     & input {
       margin: 1rem 0rem;
-
       border: 2px solid #4700ff;
       border-radius: 5px;
       display: block;
+      padding: 1rem 2rem;
     }
 
     & textarea {
@@ -830,6 +856,7 @@ text {
       resize: none;
       border: 2px solid #4700ff;
       border-radius: 5px;
+      padding: 1rem 2rem;
     }
   }
 }
@@ -845,4 +872,6 @@ text {
   border-radius: 4px;
   color: var(--background-color);
   text-align: center;
+  font-family: "Kanit";
+  cursor: pointer;
 }
