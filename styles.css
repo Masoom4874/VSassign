@@ -4,39 +4,8 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.page-container {
-  position: relative;
-  min-height: 100vh;
-}
-
-.button-container {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-}
-
-.action-button {
-  padding: 10px 20px;
-  background-color: #007bff; /* Adjust the background color as needed */
-  color: #fff; /* Adjust the text color as needed */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-/* @font-face {
-  font-family: "YourFontName";
-  src: url("path/to/your/font.woff2") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-}  */
-
 text {
-  font-family: "nothingyoucando", sans-serif; /* Use 'sans-serif' as a fallback */
+  font-family: "nothingyoucando", sans-serif;
 }
 
 /* template classes */
@@ -60,7 +29,7 @@ text {
   cursor: pointer;
 }
 .vertical-line {
-  border-left: 2px solid #ff007f; /* Adjust the color and thickness as needed */
+  border-left: 2px solid #ff007f;
   height: 100%;
 }
 
@@ -169,20 +138,20 @@ text {
   top: 38%;
   left: 105%;
   transform: translate(-50%, -50%);
-  width: 15rem; /* Adjust the width as needed */
-  height: 15rem; /* Adjust the height as needed */
+  width: 15rem;
+  height: 15rem;
 }
 #h-p-main-3 {
   position: relative;
-  text-align: center; /* Center the content horizontally */
+  text-align: center;
 }
 
 #paste {
   position: absolute;
-  top: 55%; /* Adjust the top position as needed */
+  top: 55%;
   left: 60%;
   transform: translate(-50%, -50%);
-  width: 25rem; /* Adjust the width as needed */
+  width: 25rem;
   height: 15rem;
 }
 
@@ -243,8 +212,8 @@ text {
 #footer-container h6 {
   margin: 0;
   padding: 10px;
-  transition: opacity 1s ease-out; /* Smooth transition for opacity */
-  animation: slideRightToLeft 5s ease infinite; /* Apply the animation to the element */
+  transition: opacity 1s ease-out;
+  animation: slideRightToLeft 5s ease infinite;
 }
 
 @keyframes slideRightToLeft {
@@ -319,7 +288,7 @@ text {
 }
 #Navbar.show {
   display: block;
-  opacity: 1; /* Show the navbar with a smooth transition */
+  opacity: 1; /* Show the navbar with a smooth transition *
 }
 
 #Navbar-body {

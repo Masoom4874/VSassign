@@ -20,7 +20,6 @@ function scrollToSection(sectionId) {
 
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("close-btn").addEventListener("click", function () {
-    // Navigate to the home section
     window.location.href = "#home";
   });
 });
@@ -54,6 +53,12 @@ function redirectToCampaignIdea() {
   const currentHost = window.location.host;
 
   window.open("campaignIdeas.html", "_self");
+}
+
+function goToHomePage() {
+  const currentHost = window.location.host;
+
+  window.open("index.html", "_self");
 }
 
 const capaginOptions = document.getElementById("leftContent");

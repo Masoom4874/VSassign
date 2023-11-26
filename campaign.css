@@ -3,6 +3,33 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.button-container {
+  position: fixed;
+  bottom: 20px;
+  right: 80px;
+  z-index: 1000; /* Adjust the z-index as needed */
+}
+
+.action-button {
+  padding: 20px 20px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 9rem;
+  border-radius: 8rem;
+}
 
 .text-left {
   text-align: left;
