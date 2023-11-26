@@ -333,3 +333,37 @@ function contactUs() {
 }
 
 // Metrics
+const matricsList = [
+  {
+    title: "Impression",
+    image: "assets/MatricImages/page1img1.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+  {
+    title: "Engagement",
+    image: "assets/MatricImages/page1img2.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+  {
+    title: "Social Media Followers",
+    image: "assets/MatricImages/matricimg4.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+  {
+    title: "Leads And Sales",
+    image: "assets/MatricImages/leadsandsales.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+  {
+    title: "Brand Awareness",
+    image: "assets/MatricImages/brandawareness.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+
+  {
+    title: "Analytics + Leaderboard",
+    image: "assets/MatricImages/brandawareness.gif",
+    desc: "The number of people who have seen your campaign.",
+  },
+];
+const matricsDiv = document.getElementById("matricList");
