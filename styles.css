@@ -3,6 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.action-button {
+  padding: 10px 20px;
+  background-color: #007bff; /* Adjust the background color as needed */
+  color: #fff; /* Adjust the text color as needed */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 /* @font-face {
   font-family: "YourFontName";
   src: url("path/to/your/font.woff2") format("woff2");
@@ -135,11 +160,14 @@ text {
 #h-p-main-1-img {
   position: relative;
 }
+#brand-div {
+  position: relative;
+}
 
 #brand-gif {
   position: absolute;
   top: 38%;
-  left: 45%;
+  left: 105%;
   transform: translate(-50%, -50%);
   width: 15rem; /* Adjust the width as needed */
   height: 15rem; /* Adjust the height as needed */
@@ -169,13 +197,12 @@ text {
 
 #Brand-power-h6 {
   position: relative;
-  z-index: 1;
 }
 
 #text-h-1 {
   font-size: 5rem;
   font-weight: 1200;
-  font-family: "RUBIK", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   color: #4700ff;
   transform: rotate(-2deg);
 }
@@ -183,7 +210,7 @@ text {
 #text-h-2 {
   font-size: 9rem;
   font-weight: 1200;
-  font-family: "RUBIK", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   color: white;
   transform: rotate(-2deg);
   text-shadow: -4px -4px 0px red, -8px -8px 0px blue;
@@ -192,7 +219,7 @@ text {
 #text-h-3 {
   font-size: 5rem;
   font-weight: 1200;
-  font-family: "RUBIK", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   color: #ff007f;
   transform: rotate(-2deg);
 }
@@ -379,9 +406,9 @@ text {
 #campaign-idea h6 {
   font-size: 4rem;
   font-weight: 1200;
-  font-family: "RUBIK", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   color: white;
-  text-shadow: -8px -8px 0px blue;
+  text-shadow: -8px -4px 0px blue;
   text-align: end;
 }
 
@@ -479,7 +506,7 @@ text {
   width: 15%;
   transform: rotate(-90deg);
   font-size: 5rem;
-  font-family: "RUBIK", sans-serif;
+  font-family: "Rubik Mono One", sans-serif;
   text-shadow: 5px 0px 0px black;
 }
 #matric-main-2 {
@@ -576,6 +603,88 @@ text {
   font-family: "Kanit", sans-serif;
 }
 
+/* Matrics */
+
+.matric-list-content {
+  height: 98%;
+  width: 35vh;
+  background-color: #9e04c5;
+  margin-right: 4rem;
+  border-radius: 4rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  & img {
+    height: 45%;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  & h1 {
+    transform: rotate(-90deg);
+    font-family: "Kanit";
+    color: white;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  & h3 {
+    display: none;
+  }
+}
+
+.matric-list-content-active {
+  height: 100%;
+  width: 50vh;
+  background-color: #9e04c5;
+  margin-right: 4rem;
+  border-radius: 4rem;
+  padding: 2rem;
+  & img {
+    height: 70%;
+    width: 100%;
+  }
+
+  & h1 {
+    font-family: "Kanit";
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  & h3 {
+    font-family: "Kanit";
+    color: white;
+  }
+}
+
+.metric-container {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+
+.sliderDots {
+  display: flex;
+  align-items: center;
+  .dot {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: gray;
+  }
+  .dot-active {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    border-radius: 50%;
+    background-color: #9e04c5;
+  }
+  .goback {
+    margin-left: 1rem;
+  }
+}
 /* CReate campaign page Styles 
 ----------------------
 ----------------------*/

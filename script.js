@@ -342,28 +342,166 @@ const matricsList = [
   {
     title: "Engagement",
     image: "assets/MatricImages/page1img2.gif",
-    desc: "The number of people who have seen your campaign.",
+    desc: "The level of interaction your campaign has received, such as clicks, likes, shares, and comments.    ",
   },
   {
     title: "Social Media Followers",
     image: "assets/MatricImages/matricimg4.gif",
-    desc: "The number of people who have seen your campaign.",
+    desc: "  The increase in social media followers your campaign has generated.",
   },
   {
     title: "Leads And Sales",
     image: "assets/MatricImages/leadsandsales.gif",
-    desc: "The number of people who have seen your campaign.",
+    desc: "The number of leads and sales your campaign has generated.",
   },
   {
     title: "Brand Awareness",
     image: "assets/MatricImages/brandawareness.gif",
-    desc: "The number of people who have seen your campaign.",
+    desc: "The impact your campaign has had on increasing brand recognition and awareness.",
   },
 
   {
     title: "Analytics + Leaderboard",
-    image: "assets/MatricImages/brandawareness.gif",
-    desc: "The number of people who have seen your campaign.",
+    image: "assets/MatricImages/analytics.gif",
+    desc: " Get detailed analytics of campaign performance with leaderboard based on customer engagement",
   },
 ];
-const matricsDiv = document.getElementById("matricList");
+const metricsDiv = document.getElementById("metric-container");
+const sliderDots = document.getElementById("sliderDots");
+
+function slideMetrics(index) {
+  console.log(index);
+  let content = ``;
+  let list;
+  switch (index) {
+    case 0:
+      list = [matricsList[0], matricsList[1], matricsList[2]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 0 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    case 1:
+      list = [matricsList[0], matricsList[1], matricsList[2]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 1 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    case 2:
+      list = [matricsList[1], matricsList[2], matricsList[3]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 1 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    case 3:
+      list = [matricsList[2], matricsList[3], matricsList[4]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 1 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    case 4:
+      list = [matricsList[3], matricsList[4], matricsList[5]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 1 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    case 5:
+      list = [matricsList[4], matricsList[5]];
+      for (let i = 0; i < list.length; i++) {
+        content += `
+        <div ${
+          i == 0
+            ? 'style=" display: flex; flex-direction: column; justify-content: space-between;"'
+            : ""
+        }  class="matric-list-content${i == 1 ? "-active" : ""}">
+        <img src="${list[i].image}" alt="" srcset="" />
+        <h1>${list[i].title}</h1>
+        <h3>${list[i].desc}</h3>
+      </div>`;
+      }
+
+      break;
+
+    default:
+      break;
+  }
+  metricsDiv.innerHTML = content;
+  setSliderContent(index);
+}
+
+function setSliderContent(index) {
+  let content = ``;
+
+  for (let i = 0; i < 5; i++) {
+    content += `<div class="${i == index ? "dot-active" : "dot"}"></div>`;
+  }
+
+  content += `<div onclick="slideMetrics(${
+    index == 5 ? 0 : index + 1
+  })" class="next-matrix">
+  ${
+    index == 5
+      ? '<div class="go-back-btn"> GO BACK </div>'
+      : '<img src="./assets/MatricImages/next.svg" alt="" srcset="" />'
+  }
+</div>`;
+
+  sliderDots.innerHTML = content;
+}
+
+slideMetrics(0);
+setSliderContent(0);

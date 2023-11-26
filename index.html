@@ -8,10 +8,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Nothing+You+Could+Do&family=Rubik:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@800&family=Nothing+You+Could+Do&family=Rubik+Mono+One&display=swap"
       rel="stylesheet"
     />
 
@@ -39,7 +37,7 @@
           </div>
           <div id="h-p-main-2">
             <div id="make-your">
-              <div>
+              <div id="brand-div">
                 <h6 id="text-h-1">MAKE YOUR</h6>
                 <h6 id="text-h-2">BRAND</h6>
                 <img
@@ -181,25 +179,46 @@
         <div id="matric-main-1">
           <h6>MATRIC MEASURES</h6>
         </div>
-        <div id="matric-main-2">
-          <img src="assets/MatricImages/page1img1.gif" alt="" />
-          <h6>Impression</h6>
-          <span>The number of people who have seen your campaign.</span>
-        </div>
-        <div id="matric-main-3">
-          <div id="matric-main-3-img">
-            <img src="assets/MatricImages/page1img2.gif" alt="" srcset="" />
+        <div class="metric-container" id="metric-container">
+          <div class="matric-list-content-active">
+            <img src="./assets/MatricImages/page1img1.gif" alt="" srcset="" />
+            <h1>Impression</h1>
+            <h3>The number of people who have seen your campaign.</h3>
           </div>
-          <h6>Engagement</h6>
-        </div>
-        <div id="matric-main-4">
-          <div id="matric-main-4-img">
-            <img src="assets/MatricImages/matricimg4.gif" alt="" srcset="" />
+          <div
+            style="
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+            "
+            class="matric-list-content"
+          >
+            <img
+              style="
+                background: url(./assets/MatricImages/engagement-elipes.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                /* object-fit: contain; */
+              "
+              src="assets/MatricImages/page1img2.gif"
+              alt=""
+              srcset=""
+            />
+            <h1>Engagement</h1>
           </div>
-          <h6 id="matric-main-4-text">Social Media Followers</h6>
+          <div class="matric-list-content"></div>
         </div>
       </div>
-      <div>slider buttons</div>
+      <div id="sliderDots" class="sliderDots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div onclick="slideMetrics(5)" class="next-matrix">
+          <img src="./assets/MatricImages/next.svg" alt="" srcset="" />
+        </div>
+      </div>
     </div>
     <!-- 
     Create Campaign page---------------------------------------------------------------------
