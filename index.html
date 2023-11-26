@@ -8,8 +8,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Kanit&family=Nothing+You+Could+Do&family=Rubik+Mono+One&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@600&family=Nothing+You+Could+Do&family=Rubik:wght@500&display=swap"
       rel="stylesheet"
     />
 
@@ -163,7 +165,9 @@
       </div>
 
       <div id="campaign-3">
-        <button type="button"><b>KNOW MORE</b></button>
+        <button type="button" onclick="redirectToCampaignIdea()">
+          <b>KNOW MORE</b>
+        </button>
       </div>
     </div>
 
@@ -224,6 +228,23 @@
         srcset=""
       />
     </div>
+
+    <!-- Capaign Type -->
+
+    <section id="campaigns" class="bg-color">
+      <div class="left horizontal-space-around">
+        <img
+          src="./assets/capagin.svg"
+          height="180px"
+          style="object-fit: fill"
+          alt=""
+          srcset=""
+        />
+        <div id="capaginOptions"></div>
+      </div>
+
+      <div class="right" id="rightContainer"></div>
+    </section>
 
     <!-- 
     footer ---------------------------------------------------------------------

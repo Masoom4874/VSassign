@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.class-p {
+  font-size: 2rem;
+  font-weight: small;
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+  padding-right: 20%;
+}
+
+.class-h6 {
+  margin-bottom: 10%;
+  font-size: 4rem;
+  color: #4700ff;
+  font-family: "Kanit", sans-serif;
+  text-align: left;
+  width: 100%;
+}
+
+#page-1 {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#page-1-section-1 {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 100%;
+  padding-left: 0%;
+  position: relative;
+}
+
+#page-1-section-1 h6 {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  left: 5.5%;
+  transform: translateX(-50%);
+  margin: 0;
+  font-family: "Nothing You Could Do", sans-serif;
+}
+
+#page-1-section-1 h1 {
+  font-size: 4rem;
+  margin-left: 19%;
+  font-family: "RUBIK", sans-serif;
+  color: #ff018f;
+}
+
+#page-1-section-1 {
+  display: flex;
+  align-items: center;
+  height: 20%;
+  width: 90%;
+  margin-left: 10%;
+}
+
+#page-1-section-2 {
+  display: flex;
+  height: 80%;
+  width: 100%;
+}
+
+#page1-sec2-1 {
+  margin-left: 10%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 5rem;
+  text-align: left;
+}
+#page1-sec2-1 h6 {
+  margin-bottom: 10%;
+  font-size: 4rem;
+  color: #4700ff;
+  font-family: "Kanit", sans-serif;
+}
+
+#page1-sec2-1 p {
+  font-size: 2rem;
+  font-weight: small;
+  font-family: "Kanit", sans-serif;
+}
+
+#page1-sec2-2 {
+  width: 50%;
+  position: relative;
+}
+
+#page1-sec2-2 > div {
+  position: absolute;
+}
+
+#page1-sec2-2 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 20%;
+  right: 0;
+  height: 90%;
+}
+
+#page1-sec2-2 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  bottom: 20%;
+  width: 60%;
+  height: 20%;
+  right: 30%;
+}
+
+#page1-sec2-2 > div:nth-child(3) {
+  background-color: #4700ff;
+  height: 60%;
+  width: 60%;
+
+  right: 19%;
+  top: 15%;
+}
+
+#page1-sec2-2 > div:nth-child(4) {
+  right: 15%;
+  top: 2%;
+}
+
+/* 
+    ---------------css for page 2-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-2 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page2-sec1 {
+  width: 50%;
+  position: relative;
+}
+#page2-sec2 {
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page2-sec1 {
+  position: relative;
+}
+
+#page2-sec1 > div {
+  position: absolute;
+}
+
+#page2-sec1 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 60%;
+  left: 0;
+  height: 90%;
+}
+#page2-sec1 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 75%;
+  bottom: 0;
+  left: 20%;
+  height: 15%;
+}
+
+#page2-sec1 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 5%;
+  left: 22%;
+  height: 70%;
+}
+
+#page2-sec1 > div:nth-child(4) {
+  width: 60%;
+  bottom: 5%;
+  left: 30%;
+  height: 70%;
+}
+
+/* 
+    ---------------css for page 3-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-3 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page3-sec1 {
+  margin-left: 10%;
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page3-sec2 {
+  width: 50%;
+  position: relative;
+}
+
+#page3-sec2 {
+  position: relative;
+}
+
+#page3-sec2 > div {
+  position: absolute;
+}
+#page3-sec2 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 90%;
+  top: 30%;
+  right: 0;
+  height: 30%;
+}
+#page3-sec2 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 40%;
+  bottom: 6%;
+  left: 15%;
+  height: 40%;
+}
+
+#page3-sec2 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 5%;
+  left: 22%;
+  height: 70%;
+}
+
+#page3-sec2 > div:nth-child(4) {
+  width: 60%;
+  bottom: 5%;
+  left: 30%;
+  height: 70%;
+}
+
+/* 
+    ---------------css for page 4-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-4 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page4-sec1 {
+  width: 50%;
+  position: relative;
+}
+#page4-sec2 {
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page4-sec1 {
+  position: relative;
+}
+
+#page4-sec1 > div {
+  position: absolute;
+}
+
+#page4-sec1 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 75%;
+  left: 0;
+  bottom: 0;
+  height: 50%;
+}
+#page4-sec1 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 25%;
+  right: 10%;
+  top: 30%;
+  height: 30%;
+}
+
+#page4-sec1 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 5%;
+  left: 22%;
+  height: 70%;
+}
+
+#page4-sec1 > div:nth-child(4) {
+  width: 60%;
+  bottom: 5%;
+  left: 25%;
+  height: 70%;
+}
+
+/* 
+    ---------------css for page 5-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-5 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page5-sec1 {
+  margin-left: 10%;
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page5-sec2 {
+  width: 50%;
+  position: relative;
+}
+
+#page5-sec2 {
+  position: relative;
+}
+
+#page5-sec2 > div {
+  position: absolute;
+}
+#page5-sec2 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 30%;
+  top: 0%;
+  right: 0;
+  height: 50%;
+}
+#page5-sec2 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 60%;
+  bottom: 6%;
+  left: 15%;
+  height: 40%;
+}
+
+#page5-sec2 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 10%;
+  left: 22%;
+  height: 65%;
+}
+
+#page5-sec2 > div:nth-child(4) {
+  width: 60%;
+  bottom: 5%;
+  left: 30%;
+  height: 70%;
+}
+
+/* 
+    ---------------css for page 6-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-6 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page6-sec1 {
+  width: 50%;
+  position: relative;
+}
+#page6-sec2 {
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page6-sec1 {
+  position: relative;
+}
+
+#page6-sec1 > div {
+  position: absolute;
+}
+
+#page6-sec1 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 40%;
+  left: 0;
+  top: 0;
+  height: 50%;
+}
+#page6-sec1 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 25%;
+  bottom: 0%;
+  right: 10%;
+  height: 50%;
+}
+
+#page6-sec1 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 5%;
+  left: 22%;
+  height: 70%;
+}
+
+#page6-sec1 > div:nth-child(4) {
+  width: 60%;
+  bottom: 5%;
+  left: 25%;
+  height: 70%;
+}
+
+/* 
+    ---------------css for page 5-----
+    ----------------------------------
+    ---------------------------------- */
+
+#page-7 {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+}
+
+#page7-sec1 {
+  margin-left: 10%;
+  width: 40%;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#page7-sec2 {
+  width: 50%;
+  position: relative;
+}
+
+#page7-sec2 {
+  position: relative;
+}
+
+#page7-sec2 > div {
+  position: absolute;
+}
+#page7-sec2 > div:nth-child(1) {
+  background-color: #f3cb3b;
+  width: 35%;
+  top: 0%;
+  right: 30%;
+  height: 50%;
+}
+#page7-sec2 > div:nth-child(2) {
+  background-color: #f3cb3b;
+  width: 40%;
+  bottom: 6%;
+  left: 15%;
+  height: 20%;
+}
+
+#page7-sec2 > div:nth-child(3) {
+  background-color: #4700ff;
+  width: 60%;
+  bottom: 10%;
+  left: 22%;
+  height: 65%;
+}
+
+#page7-sec2 > div:nth-child(4) {
+  width: 60%;
+  bottom: 2%;
+  left: 30%;
+  height: 70%;
+}
