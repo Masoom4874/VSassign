@@ -274,12 +274,12 @@ text {
 } */
 
 #Navbar {
-  display: none; /* Initially hide the navbar */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100%; /* Set a fixed height, adjust as needed */
+  height: 100%;
   background-color: #ff007f; /* Semi-transparent black overlay */
   color: #fff;
   box-sizing: border-box;
@@ -288,7 +288,7 @@ text {
 }
 #Navbar.show {
   display: block;
-  opacity: 1; /* Show the navbar with a smooth transition *
+  opacity: 1; /* Show the navbar with a smooth transition */
 }
 
 #Navbar-body {
